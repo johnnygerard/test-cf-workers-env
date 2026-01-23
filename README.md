@@ -8,7 +8,7 @@ The primary objective of this project is to demonstrate that environment variabl
 ## Procedure to Override Build-Time Environment Variables
 
 1. In the Cloudflare Workers dashboard ("Workers & Pages"), select the "Settings" tab of your worker.
-2. Select "Build" on-page section.
+2. Select the "Build" section on the page.
 3. Look for "Variables and secrets" and click on "+ Add".
 4. In the modal that appears, add your variable ("Variable name" and "Value" fields), then click "Save".
 5. Go to "Deployments" tab and click on "View build history".
