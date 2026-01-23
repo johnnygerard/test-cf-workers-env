@@ -1,12 +1,18 @@
-# Astro 5 Starter
+# Cloudflare Workers Environment Test
 
-This starter repository facilitates the creation of new Astro projects using the configuration described below.
-
-To learn how to use a GitHub template repository, check
-out [Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+The primary objective of this project is to demonstrate that environment variables loaded from a `.env` file can be overridden without modifying the source code. This functionality is driven by the environment loading priorities inherent to Vite, which serves as the underlying build tool for Astro. For further technical details, refer to the documentation on [Vite Environment Variables and Modes](https://vite.dev/guide/env-and-mode#env-files).
 
 ![project status](https://img.shields.io/badge/project_status-active-success?style=for-the-badge)
 [![live site](https://img.shields.io/badge/live_site-blue?style=for-the-badge)](https://test-cf-workers-env.mail-25a.workers.dev/)
+
+## Procedure to Override Build-Time Environment Variables
+
+1. In the Cloudflare Workers dashboard ("Workers & Pages"), select the "Settings" tab of your worker.
+2. Select "Build" on-page section.
+3. Look for "Variables and secrets" and click on "+ Add".
+4. In the modal that appears, add your variable ("Variable name" and "Value" fields), then click "Save".
+5. Go to "Deployments" tab and click on "View build history".
+6. Find the latest build, click on the three dots on the right side, and select "Retry build".
 
 ## Tech Stack
 
