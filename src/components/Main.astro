@@ -1,3 +1,12 @@
+---
+import { PUBLIC_VALUE } from "astro:env/client";
+---
+
 <main class="grid min-h-screen place-items-center bg-gray-100">
-  <h1 class="text-2xl text-gray-800">Deployment successful!</h1>
+  <div>
+    <h1 class="text-2xl text-gray-800">Deployment successful!</h1>
+    <p class="mt-4 text-gray-600">
+      PUBLIC_VALUE is: <strong class="text-blue-600">{PUBLIC_VALUE}</strong>
+    </p>
+  </div>
 </main>
